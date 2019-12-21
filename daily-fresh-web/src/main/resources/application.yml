@@ -1,0 +1,10 @@
+server:
+  port: 8001
+
+spring:
+  ## 数据库访问配置
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://129.211.83.187:3306/saas_daily_fresh?useUnicode=true&characterEncoding=UTF-8&useSSL=false
+    username: root
+    password: 'zhu19940121'
