@@ -38,11 +38,27 @@
             <artifactId>spring-boot-starter-aop</artifactId>
         </dependency>
 
+        <!-- alibaba的druid数据库连接池 -->
+        <dependency>
+            <groupId>com.alibaba</groupId>
+            <artifactId>druid-spring-boot-starter</artifactId>
+            <version>1.1.10</version>
+        </dependency>
+
+        <!-- mybatis-plus封装 -->
         <dependency>
             <groupId>com.github.flying-cattle</groupId>
             <artifactId>mybatis-dsc-generator</artifactId>
             <version>3.0.6.RELEASE</version>
         </dependency>
+
+        <!-- https://mvnrepository.com/artifact/mysql/mysql-connector-java -->
+        <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+            <version>5.1.47</version>
+        </dependency>
+
 
         <dependency>
             <groupId>com.baomidou</groupId>
@@ -72,6 +88,12 @@
             <groupId>io.springfox</groupId>
             <artifactId>springfox-swagger-ui</artifactId>
             <version>2.6.1</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.apache.commons</groupId>
+            <artifactId>commons-lang3</artifactId>
+            <version>3.5</version>
         </dependency>
 
 
