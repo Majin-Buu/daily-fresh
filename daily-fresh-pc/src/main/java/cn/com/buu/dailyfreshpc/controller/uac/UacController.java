@@ -19,10 +19,10 @@ import javax.annotation.Resource;
  *
  * @author: buu
  */
-@RestController
-@RequestMapping("/fresh/uac")
 @Slf4j
+@RestController
 @Api(value = "操作员控制模块")
+@RequestMapping("/fresh/uac")
 public class UacController {
 
     @Resource
