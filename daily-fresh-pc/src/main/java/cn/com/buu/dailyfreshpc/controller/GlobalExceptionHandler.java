@@ -61,7 +61,7 @@ public class GlobalExceptionHandler {
     @ResponseBody
     public BaseResult OtherException(Exception e) {
         log.error("系统异常={}", e.getMessage(), e);
-        return BaseResult.failed(e.getMessage());
+        return BaseResult.failed(9999, "系统异常");
     }
 
 

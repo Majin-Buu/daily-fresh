@@ -10,7 +10,11 @@ import org.apache.commons.lang3.StringUtils;
 public interface BaseService {
 
     // 校验用户基本信息
-    default void checkUserInfo(int type, String userAccount, UacUserInfo uacUserInfo) {
+    default String checkUserInfo(int type, UacUserInfo uacUserInfo) {
+
+        String userAccount = "";
+
+        Preconditions.checkArgument(!PubUtils.isNull(type), "缺少请求参数");
 
         // 判断用户是以为什么方式登录进来的
         switch (type) {
@@ -54,5 +58,7 @@ public interface BaseService {
                 userAccount = uacUserInfo.getEmail();
                 break;
         }
+
+        return userAccount;
     }
 }

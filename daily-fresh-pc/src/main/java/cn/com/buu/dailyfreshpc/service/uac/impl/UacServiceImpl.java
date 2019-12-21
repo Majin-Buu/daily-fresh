@@ -23,10 +23,8 @@ public class UacServiceImpl implements UacService {
     @Override
     public PcUacUser login(UacLoginVo uacLoginVo) {
 
-        String userAccount = "";
-
         // 用户基本信息的校验
-        checkUserInfo(uacLoginVo.getLoginType(), userAccount, uacLoginVo);
+        String userAccount = checkUserInfo(uacLoginVo.getLoginType(), uacLoginVo);
 
         // 判断数据库中没有该用户
         PcUacUser userByAccount = pcUacUserDao.findUserByAccount(userAccount);
